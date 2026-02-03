@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-background: #FDF2FC;
+  --color-surface: #F5DBE7;
+  
+  --color-left-panel: #DAD8F2;
+  --color-right-panel: #D8E6F2;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: #C3DAC1;
+  --color-secondary: #FFB9CD;
+
+  --color-on-primary: #4C7748;
+  --color-on-secondary: #BF4D6E;
+
+  --color-accent: #A28C96;
+  --color-text: #68565F;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* BASE */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+  }
+  
+  
+
+  /* default sembunyikan konten game, tampilkan pesan */
+body::before {
+  content: "Sorry, this website can only be accessed on Desktop";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    display: none; /* sembunyikan pesan di desktop */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* UTILITIES */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.25s ease-out;
 }
