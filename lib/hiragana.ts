@@ -58,7 +58,7 @@ export const hiraganaData: HiraganaItem[] = [
   { hira: "ろ", roma: "ro" },
 
   { hira: "わ", roma: "wa" },
-  { hira: "を", roma: "o" },
+  { hira: "を", roma: "o(penanda objek)" },
   { hira: "ん", roma: "n" },
 
   // === dakuten & handakuten ===

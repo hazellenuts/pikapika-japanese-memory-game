@@ -9,7 +9,7 @@ export const hiraganaRounds = {
 
   4: ["ma", "mi", "mu", "me", "mo", "ya", "yu", "yo"],
 
-  5: ["ra", "ri", "ru", "re", "ro", "wa", "o", "n"],
+  5: ["ra", "ri", "ru", "re", "ro", "wa", "o(penanda objek)", "n"],
 
   6: [
     "ga", "gi", "gu", "ge", "go",
@@ -22,20 +22,13 @@ export const hiraganaRounds = {
   7: [
   "kya", "kyu", "kyo",
   "gya", "gyu", "gyo",
-
   "sha", "shu", "sho",
   "ja", "ju", "jo",
-
   "cha", "chu", "cho",
-
   "nya", "nyu", "nyo",
-
   "hya", "hyu", "hyo",
-
   "mya", "myu", "myo",
-
   "rya", "ryu", "ryo",
-
   "bya", "byu", "byo",
   "pya", "pyu", "pyo",
   ],
