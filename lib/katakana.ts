@@ -121,6 +121,14 @@ export const katakanaData: KatakanaItem[] = [
   { kata: "リュ", roma: "ryu" },
   { kata: "リョ", roma: "ryo" },
 
+  { kata: "ギャ", roma: "gya" },
+  { kata: "ギュ", roma: "gyu" },
+  { kata: "ギョ", roma: "gyo" },
+
+  { kata: "ジャ", roma: "ja" },
+  { kata: "ジュ", roma: "ju" },
+  { kata: "ジョ", roma: "jo" },
+
   { kata: "ビャ", roma: "bya" },
   { kata: "ビュ", roma: "byu" },
   { kata: "ビョ", roma: "byo" },
